@@ -10,7 +10,7 @@ package classes;
  */
 public class CarroMain {
     public static void main(String[] args) {
-        Carro carro1 = new Carro("Duster", "Renault", "Preto", 2017, 4);
+        Carro carro1 = new Carro("Duster", "Renault", CorEnum.ROXO , 2017, 4);
         System.out.println(carro1);
         carro1.andando();
         System.out.println(carro1);

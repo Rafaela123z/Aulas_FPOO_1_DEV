@@ -11,13 +11,14 @@ package classes;
 public class Carro {
     private String modelo;
     private String marca;
-    private String cor;
-    private double ano;
+    private CorEnum cor;
+    private int ano;
     private int rodas;
     private String situacao;
-    private boolean passageiros;
+    private boolean passageiros; 
+    
 
-    public Carro(String modelo, String marca, String cor, double ano, int rodas) {
+    public Carro(String modelo, String marca, CorEnum cor, int ano, int rodas) {
         this.modelo = modelo;
         this.marca = marca;
         this.cor = cor;
