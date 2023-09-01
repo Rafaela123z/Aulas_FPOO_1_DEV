@@ -12,7 +12,7 @@ public class Usuario {
     private String nome;
     private String email;
     private boolean ativo;
-    private TipoUsuarioEnum tipo;
+    private TipoUsuarioEnum tipo; 
 
     public Usuario(String nome, String email, boolean ativo, TipoUsuarioEnum tipo) {
         this.nome = nome;

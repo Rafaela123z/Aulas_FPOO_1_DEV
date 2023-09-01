@@ -9,34 +9,33 @@ package classes.atividades;
  * @author Aluno
  */
 public class Curso {
+
     private String nome;
     private String descricao;
-    private CategoriaEnum categoria;
-    private int professores;
-    private String diasSemanas;
+    private CursoEnum categoria;
+    private boolean alunoOuro;
+    private String diaCurso;
 
-    public Curso(String nome, String descricao, CategoriaEnum categoria, int professores, String diasSemanas) {
+    public Curso(String nome, String descricao, CursoEnum categoria, boolean alunoOuro, String diaCurso) {
         this.nome = nome;
         this.descricao = descricao;
         this.categoria = categoria;
-        this.professores = professores;
-        this.diasSemanas = diasSemanas;
+        this.alunoOuro = alunoOuro;
+        this.diaCurso = diaCurso;
+    }
+
+    public boolean alunoOuro() {
+        return this.alunoOuro;
+    }
+
+    public String dias(String diaCurso) {
+        this.diaCurso = "Sabado";
+        return null;
     }
 
     @Override
     public String toString() {
-        return "Curso{" + "nome=" + nome + ", descricao=" + descricao + ", categoria=" + categoria + ", professores=" + professores + ", diasSemanas=" + diasSemanas + '}';
+        return "Curso{" + "nome=" + nome + ", descricao=" + descricao + ", categoria=" + categoria + ", alunoOuro=" + alunoOuro + ", diaCurso=" + diaCurso + '}';
     }
 
-  
-
-   
-    
-    public int professores(){
-    return this.professores = 2;
-    }
-    
-    public String diasSemana(){
-    return this.diasSemanas = "segunda, quarta e sexta";
-    }
 }

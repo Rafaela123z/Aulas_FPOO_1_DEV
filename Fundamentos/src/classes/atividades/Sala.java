@@ -12,31 +12,30 @@ public class Sala {
 
     private int cadeiras;
     private int mesas;
-    private int numeroSala;
-    private boolean projetor;
-    private boolean computadores;
-    private int qtdeComputadores;
+    private int sala;
+    private boolean temProjetor;
+    private boolean temComputadores;
+    private int numeroComputador;
 
-    public Sala(int cadeiras, int mesas, int numeroSala, boolean projetor, boolean computadores, int qtdeComputadores) {
+    public Sala(int cadeiras, int mesas, int sala, boolean temProjetor, boolean temComputadores, int numeroComputador) {
         this.cadeiras = cadeiras;
         this.mesas = mesas;
-        this.numeroSala = numeroSala;
-        this.projetor = projetor;
-        this.computadores = true;
-        this.qtdeComputadores = qtdeComputadores;
+        this.sala = sala;
+        this.temProjetor = temProjetor;
+        this.temComputadores = temComputadores;
+        this.numeroComputador = numeroComputador;
+    }
+
+    public boolean Temprojetor() {
+        return this.temProjetor;
+    }
+
+    public boolean temConmputadores() {
+        return this.temComputadores;
     }
 
     @Override
     public String toString() {
-        return "Sala{" + "cadeiras=" + cadeiras + ", mesas=" + mesas + ", numeroSala=" + numeroSala + ", projetor=" + projetor + ", computadores=" + computadores + ", qtdeComputadores=" + qtdeComputadores + '}';
-    }
-
-    public boolean funcionamentoProjetor() {
-        return this.projetor = true;
-    }
-
-    public boolean funcionamentoComputadores() {
-        return this.computadores = true;
-    }
-
+        return "Sala{" + "cadeiras=" + cadeiras + ", mesas=" + mesas + ", sala=" + sala + ", temProjetor=" + temProjetor + ", temComputadores=" + temComputadores + ", numeroComputador=" + numeroComputador + '}';
+    }   
 }

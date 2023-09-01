@@ -4,12 +4,15 @@
  */
 package enumeracao;
 
-
+import javax.naming.CompoundName;
+import javax.swing.plaf.metal.MetalIconFactory;
 
 /**
  *
  * @author Aluno
  */
 public enum TipoUsuarioEnum {
-    COMUM, TECNICO, ADMINISTRADOR
+    COMUM, TECNICO, ADMINISTRADOR 
+    
+    
 }

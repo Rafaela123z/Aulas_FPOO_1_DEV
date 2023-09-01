@@ -14,30 +14,27 @@ public class Aluno {
     private String email;
     private double ra;
     private boolean estudando;
-    private boolean fazendoLicao;
+    private boolean fazendoProva;
 
-    public Aluno(String nome, String email, double ra, boolean estudando, boolean fazendoLicao) {
+    public Aluno(String nome, String email, double ra, boolean estudando, boolean fazendoProva) {
         this.nome = nome;
         this.email = email;
         this.ra = ra;
         this.estudando = estudando;
-        this.fazendoLicao = fazendoLicao;
+        this.fazendoProva = fazendoProva;
     }
-
-    
-
-    @Override
-    public String toString() {
-        return "Aluno{" + "nome=" + nome + ", email=" + email + ", ra=" + ra + ", estudando=" + estudando + ", fazendoLicao=" + fazendoLicao + '}';
-    }
-
-    
 
     public boolean estudando() {
         return this.estudando;
     }
-    
-    public boolean fazendoLicao(){
-    return this.fazendoLicao; 
+
+    public boolean fazendoProva() {
+        return this.fazendoProva;
     }
+
+    @Override
+    public String toString() {
+        return "Aluno{" + "nome=" + nome + ", email=" + email + ", ra=" + ra + ", estudando=" + estudando + ", fazendoProva=" + fazendoProva + '}';
+    }
+
 }

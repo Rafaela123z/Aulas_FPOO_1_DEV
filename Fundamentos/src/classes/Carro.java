@@ -9,14 +9,14 @@ package classes;
  * @author Aluno
  */
 public class Carro {
+
     private String modelo;
     private String marca;
     private CorEnum cor;
     private int ano;
     private int rodas;
     private String situacao;
-    private boolean passageiros; 
-    
+    private String velocidade;
 
     public Carro(String modelo, String marca, CorEnum cor, int ano, int rodas) {
         this.modelo = modelo;
@@ -24,22 +24,21 @@ public class Carro {
         this.cor = cor;
         this.ano = ano;
         this.rodas = rodas;
-        this.situacao = "parado";
-        this.passageiros = false;
+        this.situacao = "andando";
+        this.velocidade = "rapido";
+    }
+
+    public void situacao() {
+        this.situacao = "Andando";
+    }
+
+    public void velocidade() {
+        this.velocidade = "rapido";
     }
 
     @Override
     public String toString() {
-        return "Carro{" + "modelo=" + modelo + ", marca=" + marca + ", cor=" + cor + ", ano=" + ano + ", rodas=" + rodas + ", situacao=" + situacao + ", passageiros=" + passageiros + '}';
+        return "Carro{" + "modelo=" + modelo + ", marca=" + marca + ", cor=" + cor + ", ano=" + ano + ", rodas=" + rodas + ", situacao=" + situacao + ", velocidade=" + velocidade + '}';
     }
-    
-    public void andando(){
-   this.situacao = " Em movimento";
-this.passageiros = true;
-    }
-    
-    public void parado(){
-    this.passageiros = false;
-    this.situacao = " Parado";
-    }
+
 }

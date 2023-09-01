@@ -4,14 +4,12 @@
  */
 package classes;
 
-
-
-
+import javax.swing.plaf.basic.BasicScrollPaneUI;
 
 /**
  *
  * @author Aluno
  */
 public enum CorEnum {
-    CINZA, VERMELHO, VERDE, AMARELO, CREME, PRATA, PRETO, BRANCO, ROXO, ROSA;
+    CINZA, BRANCO, VERMELHO, AZUL, AMARELO, VERDE, PRATA, PRETO, BEGE, LARANJA, ROXO 
 }

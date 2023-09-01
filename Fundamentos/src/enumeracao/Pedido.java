@@ -10,7 +10,7 @@ package enumeracao;
  */
 public class Pedido {
     private String descricao;
-    private double valor;
+    private  double valor;
     private String status;
 
     public Pedido(String descricao, double valor, String status) {
@@ -23,11 +23,12 @@ public class Pedido {
         this.status = status;
     }
     
-    
 
     @Override
     public String toString() {
         return "Pedido{" + "descricao=" + descricao + ", valor=" + valor + ", status=" + status + '}';
     }
     
-   }
+    
+    
+}

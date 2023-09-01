@@ -10,12 +10,13 @@ package classes;
  */
 public class Bicicletaria {
     public static void main(String[] args) {
-        Bicicleta caloiCross = new Bicicleta(2, true, 18, "Caloi Cross", true, "Rosa");
+        Bicicletas caloiCross = new Bicicletas(2, true, 8, "Caloi Cross", true, "Rosa");
         System.out.println(caloiCross);
-   caloiCross.andar(10);
-   caloiCross.andar(20);
-   caloiCross.andar(30);
-   
+       
+        caloiCross.andar(10);
+        caloiCross.andar(20);
+        caloiCross.andar(30);
+        
         System.out.println(caloiCross);
     }
     
